@@ -7,6 +7,8 @@
 # 4. The percentage of votes each candidate won.
 # 5. The winner of the election based on popular vote. 
 
+# 6. Write the results in a text file to send to election commission
+
 # Add dependencies
 import csv
 import os
@@ -16,9 +18,6 @@ file_to_load = './Resources/election_results.csv' #in VS Code. If in terminal fr
 #'Data Analytics/Data Bootcamp/Election-Analysis/Resources/election_results.csv'
 # Assign a variable for load a file with direct path
 file_to_save = 'Data Analytics/Data Bootcamp/Election-Analysis/Analysis/election_analysis.txt'
-# Open the file to write on it
-#with open(file_to_save,"w") as txt_file:
-     #txt_file.write("Counties in the Election\n-------------------------\nArapahoe\nDenver\nJefferson")
 
 # Initialize a total vote counter
 total_votes = 0 
@@ -50,7 +49,18 @@ with open(file_to_load) as election_data:
             candidate_votes[candidate_name] = 0
         # Add a vote to that candidate's count
         candidate_votes[candidate_name] += 1
-        
+
+# Save results to text file
+with open(file_to_save,"w") as txt_file:
+    election_results = (
+        f"\nElection Results\n"
+        f"----------------------\n"
+        f"Total Votes: {total_votes:,}\n"
+        f"----------------------\n" )
+    print(election_results, end=" ")
+    txt_file.write(election_results)
+
+
 # 1. Print the total votes cast
 print(total_votes)
 # 2. Print the list of the candidates
