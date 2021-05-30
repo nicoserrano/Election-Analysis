@@ -41,8 +41,7 @@ The election results were produced both as output in the terminal and as text in
 - The winner of the election was Diana DeGette with 73.8% of the vote (272,892 votes). 
 
 ## Summary
-
-
+In conclusion, the goal was to automate the election audit so that the code would give us the results on a separate text file. Certainly, using a program is a lot more efficient than having to count all the votes individually. Python is a great tool that allowed me to count all the votes, how many came from each county, and how many went to each candidate. Another good thing is that the code script is versatile and could help the election commission reuse it for future or different audits. 
 
 
 
