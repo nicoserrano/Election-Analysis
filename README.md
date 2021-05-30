@@ -10,7 +10,18 @@ This project will analyze the Colorado Congressional Election data to come up wi
 - Software: Python 3.6.1, Visual Studio Code 1.56.2
 
 ## Analysis
-In order to come up with the analysis of the election data I utilized python packages such as csv and os; variables like integers, floats, lists, dictionaries; modules to modify and call objects; membership and logical operators; repetition statements like for loops; and different printing formats like f-strings. *The code will be attached to the repo like 'PyPoll_Challenge.py', if you want to take a look to the script*.
+In order to come up with the analysis of the election data I utilized python packages such as csv and os; variables like integers, floats, lists, dictionaries; modules to modify and call objects; membership and logical operators; repetition and decision statements like for loops and if statements; and different printing formats like f-strings. *The code will be attached to the repo like 'PyPoll_Challenge.py', if you want to take a look to the script*.
+
+The election results were produced both as output in the terminal and as text in a file I created and wrote on automatically as the code ran. 
+
+**Terminal:**
+
+![Terminal_Output](https://user-images.githubusercontent.com/83378141/120089514-27957d80-c0c9-11eb-9a4a-a1cac8682811.png)
+
+**File.txt:**
+
+![Text_File_Output](https://user-images.githubusercontent.com/83378141/120089515-2b290480-c0c9-11eb-9d89-c3ef4894ca85.png)
+
 
 ## Results
 - There were 369,711 votes cast in the election.
